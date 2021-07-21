@@ -33,8 +33,12 @@
             <div class="nav">
                 <ul>
                     <li><a href="index.html">Início</a></li>
-                    <li> <!-- <a id="sabotage" style="display: none;" --> <a href="sabotage.html">Sabotage</a></li>
-                    <li> <!-- <a id="racionais" style="display: none;"--> <a href="racionais.html">Racionais MC's</a></li>
+                    <li>
+                        <!-- <a id="sabotage" style="display: none;" --> <a href="sabotage.html">Sabotage</a>
+                    </li>
+                    <li>
+                        <!-- <a id="racionais" style="display: none;"--> <a href="racionais.html">Racionais MC's</a>
+                    </li>
                     <li><a href="login.html">Login</a></li>
                     <li class="current"><a href="cadastro.html">Cadastro</a></li>
                 </ul>
@@ -74,14 +78,14 @@
 
 </html>
 <script>
-   /* session();
-    function session() {
-        var session = sessionStorage.getItem("nome");
-        if (session != undefined) {
-            sabotage.style = "display:block";
-            racionais.style = "display:block";
-        }
-    } */
+    /* session();
+     function session() {
+         var session = sessionStorage.getItem("nome");
+         if (session != undefined) {
+             sabotage.style = "display:block";
+             racionais.style = "display:block";
+         }
+     } */
     function cadastrar() {
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
